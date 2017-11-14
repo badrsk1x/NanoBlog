@@ -1,0 +1,32 @@
+{% extends 'base.html.twig' %}
+
+{% block body_id 'blog_post_show' %}
+
+{% block main %}
+    <h1>{{ post.title }}</h1>
+
+    <p class="post-metadata">
+        <span class="metadata"><i class="fa fa-calendar"></i> {{ post.publishedAt|localizeddate('long', 'medium', null, 'UTC') }}</span>
+        <span class="metadata"><i class="fa fa-user"></i> {{ post.AuthorName }} ( {{ post.Email }} )</span>
+
+    </p>
+
+    {{ post.content|md2html }}
+
+
+    
+
+    
+{% endblock %}
+
+{% block sidebar %}
+    {% if is_granted('edit', post) %}
+        <div class="section">
+            <a class="btn btn-lg btn-block btn-success" href="{{ path('admin_post_edit', {id: post.id}) }}">
+                <i class="fa fa-edit" aria-hidden="true"></i> {{ 'action.edit_post'|trans }}
+            </a>
+        </div>
+    {% endif %}
+
+
+{% endblock %}
