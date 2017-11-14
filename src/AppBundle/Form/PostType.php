@@ -47,6 +47,10 @@ class PostType extends AbstractType
                 'attr' => ['autofocus' => true],
                 'label' => 'label.title',
             ])
+              ->add('slug', null , [
+                'label' => 'label.slug',
+                'required' => false,
+            ])
               ->add('author_name', null , [
                 'label' => 'label.author_name',
                 'required' => false,

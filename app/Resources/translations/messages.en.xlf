@@ -102,6 +102,10 @@
                 <source>label.delete_post</source>
                 <target>Delete post</target>
             </trans-unit>
+             <trans-unit id="label.slug">
+                <source>label.slug</source>
+                <target>Slug</target>
+            </trans-unit>
             <trans-unit id="label.cancel">
                 <source>label.cancel</source>
                 <target>Cancel</target>

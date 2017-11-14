@@ -14,6 +14,10 @@
                 <source>label.author_name</source>
                 <target>Autorenname</target>
             </trans-unit>
+             <trans-unit id="label.slug">
+                <source>label.slug</source>
+                <target>Slug</target>
+            </trans-unit>
             <trans-unit id="title.homepage">
                 <source>title.homepage</source>
                 <target>Project: NanoBlog / IFunded Test </target>
