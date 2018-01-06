@@ -1,7 +1,7 @@
 Symfony NanoBlog 
 ========================
 
-Symfony based NanoBlog "Test task" .
+Symfony based NanoBlog  .
 
 Requirements
 ------------
